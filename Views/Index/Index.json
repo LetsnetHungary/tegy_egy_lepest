@@ -1,9 +1,7 @@
 {
 	"css" : [
-		"../../assets/css/Index.css"
   ],
 	"js" : [
-		"../../assets/js/Index.js"
   ],
   "fonts" : [
 	],
