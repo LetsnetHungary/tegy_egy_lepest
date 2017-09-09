@@ -18,7 +18,7 @@
         private function getController() {
 
             $href = $this->findController($this->uri);
-            
+
             if(!$href){
               return(require(_HTTP_ERROR_CONTROLLER));
             }

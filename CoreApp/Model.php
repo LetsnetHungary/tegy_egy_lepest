@@ -1,11 +1,11 @@
 <?
 
     namespace CoreApp;
-    
+
         class Model {
 
             public function __construct() {
-                
+
             }
 
             protected function CURLWPOST($url, $postarray) {
@@ -18,5 +18,4 @@
                 curl_close($ch);
                 return $api_output;
             }
-
         }
