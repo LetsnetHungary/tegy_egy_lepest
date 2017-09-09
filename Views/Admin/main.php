@@ -15,6 +15,9 @@
                     </form>
                 </div>
             </div>
+            <div style="display: none;">
+              <textarea class="ckeditor" name="editor"></textarea>
+            </div>
         </div>
     </div>
 </main>
