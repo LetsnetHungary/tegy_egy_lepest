@@ -5,5 +5,7 @@ ini_set('display_errors', 1);
 require "vendor/autoload.php";
 require "CoreApp/Enviroment.php";
 
+
+
 $app = new CoreApp\App();
 $app->startApp();

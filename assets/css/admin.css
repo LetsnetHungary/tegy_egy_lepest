@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+.buttons{
+  padding: 10px;
+}
+.new_container{
+  max-width: 70vw;
+}
+label{
+  font-weight: bold;
+}
+.column{
+  display: flex;
+}
+.prev{
+  width: 40vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:  center;
+}
+.mod{
+  width: 40vw;
+}
+.form-group{
+  padding: 5px;
+}
+.submit_holder{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
