@@ -6,3 +6,4 @@
       $view = new CoreApp\View("Index");
       $view->render();
     });
+    

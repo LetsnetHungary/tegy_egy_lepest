@@ -1,6 +1,6 @@
 {
 	"css" : [
-    "../../assets/css/admin.css"
+    "../../assets/css/Login.css"
   ],
 	"js" : [
     "https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"
@@ -9,7 +9,7 @@
 	],
 	"seo" :
 	{
-		"title" : "Admin",
+		"title" : "Index",
 		"charset" : "UTF-8",
 		"meta" : {
 			"description" : "This is the test Index page"
