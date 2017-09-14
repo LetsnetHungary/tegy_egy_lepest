@@ -15,15 +15,33 @@
          </a>
        </nav>
          <li class="nav-item active">
-           <a class="nav-link" href="#">Bemutatkozás<span class="sr-only">(current)</span></a>
+           <a class="nav-link" href="Index">Bemutatkozás<span class="sr-only">(current)</span></a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="/Projektek">Támogatott projektek</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="/kontakt">Elérhetőség</a>
+           <a class="nav-link" href="/Kontakt">Elérhetőség</a>
          </li>
        </ul>
      </div>
    </nav>
+<!--
+      <nav class="navbar bg-danger navbar-toggleable-sm navbar-inverse">
+         <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+               <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="#">Home</a>
+                  <a class="nav-item nav-link" href="#">About</a>
+                  <a class="nav-item nav-link" href="#">Training</a>
+                  <a class="nav-item nav-link" href="#">Contact</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+   -->
 </header>
