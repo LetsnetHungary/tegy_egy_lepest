@@ -1,4 +1,9 @@
 <main>
+   <!--
+   <div class ="hatter" style="width: 100vw;">
+      <img src=" assets/images/index_image.jpg" alt="slider1">
+   </div>
+-->
       <div class="jumbotron myJumbotron">
        <div class="container">
          <h1 class="display-4">Üdvözöljük oldalunkon!</h1>
@@ -6,22 +11,20 @@
          <p class="lead">Ez a Tégy egy lépést alapítvány weboldala</p>
        </div>
       </div>
-      <div class="container">
+      <div class="container" style="background-color: white;"id="about">
          <p>Az alapítványról</p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
          </div>
-         <div class="jumbotron myJumbotron">
+         <div class="jumbotron myJumbotron" id="members">
             <div class="container">
                <h1 class="display-4">A kuratórium tagjai</h1>
             </div>
          </div>
          <!-- kuratorium tagjai start -->
          <div class="container">
-
             <div class="row justify-content-center kuratorium">
                <div class="col-md-6 col-lg-2 col-lg-offset-2">
                   <div class="card">
-                     <img src="/assets/images/img4.png" class="card-img-top img-fluid" />
                      <div class="card-block">
                         <h4 class="card-title">VALAKI1</h3>
                      </div>
@@ -33,7 +36,6 @@
                </div>
                <div class="col-md-6 col-lg-2">
                   <div class="card">
-                     <img src="/assets/images/img4.png" class="card-img-top img-fluid" />
                      <div class="card-block">
                         <h3 class="card-title">VALAKI2</h3>
                      </div>
@@ -45,7 +47,6 @@
                </div>
                <div class="col-md-6 col-lg-2">
                   <div class="card">
-                     <img src="/assets/images/img4.png" class="card-img-top img-fluid" />
                      <div class="card-block">
                         <h3 class="card-title">VALAKI3</h3>
                      </div>
@@ -57,7 +58,6 @@
                </div>
                <div class="col-md-6 col-lg-2">
                   <div class="card">
-                     <img src="/assets/images/img4.png" class="card-img-top img-fluid" />
                      <div class="card-block">
                         <h3 class="card-title">VALAKI4</h3>
                      </div>
@@ -69,7 +69,6 @@
                </div>
                <div class="col-md-6 col-lg-2">
                   <div class="card">
-                     <img src="/assets/images/img4.png" class="card-img-top img-fluid" />
                      <div class="card-block">
                         <h3 class="card-title">VALAKI5</h3>
                      </div>
@@ -83,7 +82,7 @@
 
          </div>
          <!-- KURATORIUM TAGJAI END -->
-         <div class="jumbotron myJumbotron myJumbotron2">
+         <div class="jumbotron myJumbotron myJumbotron2" id="docs">
             <div class="container">
                <h3 class="display-4">Beszámolók</h3>
              </div>
