@@ -1,9 +1,7 @@
 <main>
-   <!--
    <div class ="hatter" style="width: 100vw;">
       <img src=" assets/images/index_image.jpg" alt="slider1">
    </div>
--->
       <div class="jumbotron myJumbotron">
        <div class="container">
          <h1 class="display-4">Üdvözöljük oldalunkon!</h1>
