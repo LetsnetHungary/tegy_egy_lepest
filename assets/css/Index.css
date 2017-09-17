@@ -11,10 +11,25 @@
   width: 100vw;
   z-index: -3;
   top: 0!important;
+  padding-top: 74px;
 }
 
 .hatter img {
   max-width: 100vw;
   object-fit: cover;
   filter: blur(1px);
+}
+
+@media screen and (min-width: 400px) {
+   .hatter{
+      height: 10vh;
+   }
+   .imgSpace{
+      height: 200px;
+   }
+}
+@media screen and (min-width: 510px){
+   .header-space{
+      height: 5vh;
+   }
 }
