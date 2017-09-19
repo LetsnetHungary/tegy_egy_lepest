@@ -1,4 +1,4 @@
-<header style="opacity: 0.95; z-index: 2;">
+<header style="opacity: 1; z-index: 2;">
 
          <!--
    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
@@ -48,7 +48,7 @@
                      <a href="/Kontakt" class="nav-link">Elérhetőség</a>
                   </li>
                   <li class="nav-item">
-                     <a href="/ado" class="nav-link">Adó 1%</a>
+                     <a href="/Ado" class="nav-link">Adó 1%</a>
                   </li>
                </ul>
             </div>

@@ -1,0 +1,16 @@
+footer {
+   margin-bottom: 0;
+   background: black;
+   padding: 1.5em 0 1em;
+   color: grey;
+}
+
+.lead{
+   margin: 0 2em 0;
+}
+
+@media screen and (min-width: 475px) {
+   .lead{
+      justify-content: flex-end;
+   }
+}

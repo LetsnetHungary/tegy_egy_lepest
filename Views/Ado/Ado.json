@@ -1,0 +1,20 @@
+{
+	"css" : [
+      "../../assets/font-awesome/css/font-awesome.min.css"
+  ],
+	"js" : [
+  ],
+  "fonts" : [
+	],
+	"seo" :
+	{
+		"title" : "Kontakt",
+		"charset" : "UTF-8",
+		"meta" : {
+			"description" : "This is the test Index page"
+		},
+		"og" : {
+
+		}
+	}
+}
