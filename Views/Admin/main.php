@@ -1,4 +1,6 @@
 <main>
+  <?php
+  ?>
     <div class="container">
       <nav aria-label="Page navigation example" class="buttons">
         <ul class="pagination">
@@ -22,9 +24,18 @@
     <div class="new" style="display: none" id="0">
       <div class="container">
         <form method="post" id="egf" action="Admin/upload">
+          <div class="form-group" style="display: flex; align-items: center;">
+            <label for="title_area">Projekt típusa</label>
+            <input type="radio" class="form-control" id="title_area" style="width: 20px; margin-left: 30px" name="project" checked="checked" value="lezarult">Lezárult
+            <input type="radio" class="form-control" id="title_area" style="width: 20px; margin-left: 30px" name="project" value="futo">Futó
+          </div>
           <div class="form-group">
             <label for="title_area">Title</label>
             <input name="title" class="form-control" id="title_area">
+          </div>
+          <div class="form-group">
+            <label for="title_area">Subtitle</label>
+            <input name="subtitle" class="form-control" id="title_area">
           </div>
           <div class="form-group">
             <label for="date_area">Date</label>
@@ -35,7 +46,7 @@
             <textarea class="ckeditor" name="editor" id="content_area"></textarea>
           </div>
           <div class="form-group submit_holder">
-            <input type="submit" name="" class="btn btn-primary"id="new_form" value="Save changes">
+            <input type="submit" name="" class="btn btn-primary"id="new_form" value="Save">
           </div>
         </form>
       </div>
@@ -49,6 +60,18 @@
         <div class="existing1" id="<?php echo $counter++ ?>" style="display: none">
           <div class="container">
             <form method="post" action="Admin/update">
+              <div class="project_row column">
+                <div class="form-group mod" style="display: flex; align-items: center;">
+                  <label for="title_area">Projekt típusa</label>
+                  <input type="radio" class="form-control" id="title_area" style="width: 20px; margin-left: 30px" name="project" value="lezarult">Lezárult
+                  <input type="radio" class="form-control" id="title_area" style="width: 20px; margin-left: 30px" name="project" value="futo">Futó
+                </div>
+                <div class="prev_project prev">
+                  <?php
+                    echo $value["project"]=="lezarult" ? "Lezárult" : "Futó";
+                  ?>
+                </div>
+              </div>
               <div class="title_row column">
                 <div class="form-group mod">
                   <label for="title_area">Title</label>
@@ -58,6 +81,15 @@
                   <?php
                     echo $value["title"];
                   ?>
+                </div>
+              </div>
+              <div class="subtitle_row column">
+                <div class="form-group mod">
+                  <label for="title_area">Subtitle</label>
+                  <input name="subtitle" class="form-control" id="title_area">
+                </div>
+                <div class="prev_subtitle prev">
+                  <?php echo $value["subtitle"]; ?>
                 </div>
               </div>
               <div class="date_row column">
