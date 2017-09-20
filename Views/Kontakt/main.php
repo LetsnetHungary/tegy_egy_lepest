@@ -1,8 +1,10 @@
 <body style="background: #c5ccd8;">
    <div class="jumbotron jumbotron-fluid myJumbotron">
     <div class="container">
-      <h1 class="display-4">Kapcsolat</h1>
-      <hr class="my-1">
+      <div class="lead" style="font-size: 45px; margin: 0;">
+          Kapcsolat
+      </div>
+      <hr class="my-3">
     </div>
    </div>
    <div class="container">
@@ -25,3 +27,13 @@
    </div>
 
 </body>
+
+<footer>
+   <div class="container">
+     <div class="row d-flex justify-content-center-sm fixed-bottom">
+        <p class="lead">Készítette: Letsnet Hungary</p>
+     </div>
+
+   </div>
+   <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+</footer>

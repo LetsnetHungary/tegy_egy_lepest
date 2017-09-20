@@ -1,10 +1,7 @@
-        <footer>
+        <footer class="invisible">
            <div class="container">
              <div class="row d-flex justify-content-center-sm">
-                <p class="lead">Impresszum</p>
-                <p class="lead">ÁSZF</p>
-                <p class="lead">Szabályzat</p>
-                <p class="lead">Adószám: 123456789123456789</p>
+                <p class="lead">Készítette: Letsnet Hungary</p>
              </div>
 
            </div>

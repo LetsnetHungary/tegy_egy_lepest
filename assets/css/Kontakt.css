@@ -4,3 +4,6 @@
 .myJumbotron {
    background-color: #68bc62;
 }
+.invisible{
+   display: none;
+}

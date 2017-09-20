@@ -1,25 +1,29 @@
 
-<div class ="hatter" style="width: 100vw; padding-top: 74px;">
+<div class ="hatter" style="width: 100vw; padding-top: 143px;">
    <img src="assets/images/index.jpg" alt="slider1">
 </div>
 <main style="background: #c5ccd8;">
    <div class="jumbotron jumbotron-fluid myJumbotron">
     <div class="container">
-      <h1 class="display-4">"Tégy egy lépést!" Alapítvány!</h1>
-        <hr class="m-y-md">
-      <p class="lead" id="about">Üdvözöljük oldalunkon</p>
+      <div class="lead" style="font-size: 45px; margin-left: 0;">"Tégy egy lépést!" Alapítvány!</div>
+        <hr class="my-1">
+      <div class="lead" style="margin-left: 0;" id="about">Üdvözöljük oldalunkon</div>
     </div>
    </div>
       <div class="container">
-         <h1 class="display-4">Az alapítványról</h1>
-         <hr class="my-4">
+         <div class="lead" style="font-size: 45px; margin: 0;">
+            Az alapítványról
+         </div>
+         <hr class="my-3">
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
          </p>
          <div id="members" style="height: 74px;">
 
          </div>
-         <h1 class="display-4" id="members">A kuratórium tagjai</h1>
-         <hr class="my-3">
+            <div class="lead" style="font-size: 45px; margin: 0;">
+               A kuratórium tagjai
+            </div>
+            <hr class="my-3">
          </div>
 
 
@@ -83,9 +87,11 @@
                </div>
             </div>
 
-         <h1 class="display-4" id="docs">Beszámolók</h1>
-         <hr class="my-3">
-                  </div>
+               <div class="lead" id="docs" style="font-size: 45px; margin: 0;">
+                  Beszámolók
+               </div>
+               <hr class="my-3">
+            </div>
          <!-- KURATORIUM TAGJAI END -->
 
 
