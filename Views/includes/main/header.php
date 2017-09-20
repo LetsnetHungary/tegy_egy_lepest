@@ -22,9 +22,12 @@
    <div class="container">
       <div class="row">
          <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: white;">
-            <a href="/" class="navbar-brand text-primary" id="logo">
-               <img src="/assets/images/Tegyegylepest_logo.jpg" style="margin: 0;"width="200" height="96" class="d-inline-block align-top" alt="">
-            </a>
+            <div class="container">
+
+               <a href="/" class="navbar-brand text-primary" id="logo">
+                  <img src="/assets/images/Tegyegylepest_logo.jpg" style="margin-left: 0;"width="200" height="96" class="d-inline-block align-top" alt="">
+               </a>
+            </div>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
