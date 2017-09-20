@@ -5,9 +5,8 @@
 <main style="background: #c5ccd8;">
    <div class="jumbotron jumbotron-fluid myJumbotron">
     <div class="container">
-      <h1 class="display-4">Üdvözöljük oldalunkon!</h1>
+      <h1 class="display-4">Üdvözöljük a "Tégy egy lépést!" Alapítvány weboldalán</h1>
         <hr class="m-y-md">
-      <p class="lead" id="about">Ez a Tégy egy lépést alapítvány weboldala</p>
     </div>
    </div>
       <div class="container">
