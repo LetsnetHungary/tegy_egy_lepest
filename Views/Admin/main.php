@@ -35,7 +35,7 @@
           </div>
           <div class="form-group">
             <label for="title_area">Subtitle</label>
-            <input name="subtitle" class="form-control" id="title_area">
+            <textarea class="form-control" id="exampleTextarea" rows="3"name="subtitle"></textarea>
           </div>
           <div class="form-group">
             <label for="date_area">Date</label>
@@ -86,7 +86,7 @@
               <div class="subtitle_row column">
                 <div class="form-group mod">
                   <label for="title_area">Subtitle</label>
-                  <input name="subtitle" class="form-control" id="title_area">
+                  <textarea class="form-control" id="exampleTextarea" rows="3" name="subtitle"></textarea>
                 </div>
                 <div class="prev_subtitle prev">
                   <?php echo $value["subtitle"]; ?>
@@ -116,7 +116,8 @@
               </div>
               <div class="form-group mod submit_holder">
                 <input type="hidden" name="id" value="<?php echo $key; ?>">
-                <input type="submit" name="" class="btn btn-primary" value="Save changes">
+                <input type="submit" name="delete" class="btn btn-danger" value="Delete project">
+                <input type="submit" name="save" class="btn btn-primary" value="Save changes">
               </div>
             </form>
           </div>

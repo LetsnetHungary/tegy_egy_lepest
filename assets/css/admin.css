@@ -29,6 +29,9 @@ label{
 }
 .submit_holder{
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.submit_holder input{
+  margin: 10px;
 }

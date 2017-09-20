@@ -33,6 +33,11 @@
           return;
       }
       $model = new Admin_Model();
-      $model->updateData($_POST);
+      if(isset($_POST["save"])){
+        $model->updateData($_POST);
+      }
+      else{
+        $model->deleteData($_POST);
+      }
       header("Location: /Admin");
     });

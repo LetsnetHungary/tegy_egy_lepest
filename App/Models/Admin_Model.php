@@ -34,7 +34,12 @@
             }
           }
         }
-
+        public function deleteData($array){
+              $stmt = $this->db->prepare("DELETE FROM projects WHERE project_id = :id");
+              $stmt->execute(array(
+                ":id" => $array["id"]
+              ));
+        }
         public function getData(){
           $stmt = $this->db->prepare("SELECT `project_id`, `type`, `content` FROM `projects` WHERE 1 = 1 ");
           $stmt->execute();
