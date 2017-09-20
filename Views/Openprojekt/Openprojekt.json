@@ -1,0 +1,20 @@
+{
+	"css" : [
+      "../../assets/css/Openprojekt.css"
+  ],
+	"js" : [
+  ],
+  "fonts" : [
+	],
+	"seo" :
+	{
+		"title" : "Projektek",
+		"charset" : "UTF-8",
+		"meta" : {
+			"description" : "This is the test Index page"
+		},
+		"og" : {
+
+		}
+	}
+}

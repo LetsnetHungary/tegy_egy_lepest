@@ -11,7 +11,7 @@
       <i class="fa fa-location-arrow fa-1x" aria-hidden="true">123456789123456789</i>
    </div>
 
-   <div class="" style="height: 235px">
+   <div class="" style="height: 385px">
 
    </div>
 </div>

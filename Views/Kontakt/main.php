@@ -19,7 +19,7 @@
       <div class="col-12 contact-info">
    <i class="fa fa-envelope fa-1x" aria-hidden="true">  valaki@gmail.com</i>
       </div>
-      <div class="" style="height: 58px">
+      <div class="" style="height: 108px">
 
       </div>
    </div>

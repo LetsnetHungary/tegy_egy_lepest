@@ -9,8 +9,8 @@ footer {
    margin: 0 2em 0;
 }
 
-@media screen and (min-width: 475px) {
+@media screen and (max-width: 475px) {
    .lead{
-      justify-content: flex-end;
+      justify-content: flex-end!important;
    }
 }

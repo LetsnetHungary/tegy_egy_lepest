@@ -1,6 +1,6 @@
         <footer>
            <div class="container">
-             <div class="row d-flex justify-content-center">
+             <div class="row d-flex justify-content-center-sm">
                 <p class="lead">Impresszum</p>
                 <p class="lead">ÁSZF</p>
                 <p class="lead">Szabályzat</p>
