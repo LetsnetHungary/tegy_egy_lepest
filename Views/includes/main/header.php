@@ -22,8 +22,7 @@
    <div class="container">
       <div class="row">
          <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: white; padding: 0;">
-            <div class="container d-flex justify-content-center-sm ">
-
+            <div class="container d-flex justify-content-center-sm">
                <a href="/" class="navbar-brand text-primary" id="logo">
                   <img src="/assets/images/Tegyegylepest_logo.jpg" style="margin: 0;" width="230" height="93" class="d-inline-block align-top" alt="">
                </a>
@@ -35,23 +34,23 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                <ul class="navbar-nav">
                   <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle header-text" href="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Bemutatkozás<span class="sr-only">(current)</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="Index#about">Az alapítványról</a>
-                      <a class="dropdown-item" href="Index#members">A kuratórium tagjai</a>
-                      <a class="dropdown-item" href="Index#docs">Beszámolók</a>
+                      <a class="dropdown-item header-text" href="Index#about">Az alapítványról</a>
+                      <a class="dropdown-item header-text" href="Index#members">A kuratórium tagjai</a>
+                      <a class="dropdown-item header-text" href="Index#docs">Beszámolók</a>
                     </div>
                   </li>
                   <li class="nav-item">
-                     <a href="/Projektek" class="nav-link">Támogatott projektek</a>
+                     <a href="/Projektek" class="nav-link header-text">Támogatott projektek</a>
                   </li>
                   <li class="nav-item">
-                     <a href="/Kontakt" class="nav-link">Elérhetőség</a>
+                     <a href="/Kontakt" class="nav-link header-text">Elérhetőség</a>
                   </li>
                   <li class="nav-item">
-                     <a href="/Ado" class="nav-link">Adó 1%</a>
+                     <a href="/Ado" class="nav-link header-text">Adó 1%</a>
                   </li>
                </ul>
             </div>
