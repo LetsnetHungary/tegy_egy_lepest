@@ -11,7 +11,6 @@
           return;
       }
       $model = new Admin_Model();
-      $model->updateData($_POST);
       $view = new CoreApp\View("Admin");
       $view->contents = $model->getData();
       $view->render();
