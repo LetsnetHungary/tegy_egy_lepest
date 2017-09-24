@@ -93,7 +93,7 @@
           $route = $this->getRouteMatches($routes);
 
           if ($route) {
-            $this->routes[$route["function"]]["callback"]($route['parameters']);
+            $this->routes[$route["function"]]["callback"]($route["parameters"]);
           }
           else {
             require(_HTTP_ERROR_CONTROLLER);
