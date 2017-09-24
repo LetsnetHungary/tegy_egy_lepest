@@ -52,7 +52,7 @@
 
           $this->uri = empty($this->uri) ? [""] : $this->uri;
 
-          $c_uri = count($uri);
+          $c_uri = count($this->uri);
 
             foreach ($this->uri as $i => $urival) {
 
