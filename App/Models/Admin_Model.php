@@ -8,7 +8,7 @@
         }
 
         public function uploadData($array){
-          $mykey = md5(microtime().rand());
+          $mykey = uniqid();
           foreach ($array as $key => $value) {
             $stmt = $this->db->prepare("INSERT INTO projects (project_id, type, content) VALUES (:id, :type, :content)");
             $stmt->execute(array(
