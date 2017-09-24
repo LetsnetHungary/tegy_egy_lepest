@@ -1,6 +1,4 @@
 <main>
-  <?php
-  ?>
     <div class="container">
       <nav aria-label="Page navigation example" class="buttons">
         <ul class="pagination">
@@ -10,13 +8,18 @@
       <nav aria-label="Page navigation example" class="buttons">
         <ul class="pagination">
           <?php
-            $counter = 1;
+            $counter = 2;
             foreach($this->contents as $value){
               ?>
               <li class="page-item"><a class="page-link" href="#" onclick="setup(<?php echo $counter++; ?>)"><?php echo $value["title"]; ?></a></li>
               <?php
             }
           ?>
+        </ul>
+      </nav>
+      <nav aria-label="Page navigation example" class="buttons">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#" onclick="setup(1)">Uplad image</a></li>
         </ul>
       </nav>
     </div>
