@@ -128,7 +128,7 @@
         <?php
       }
     ?>
-    <div class="upload_image" id ="<?php echo $counter; ?>">
+    <div class="upload_image" id ="<?php echo $counter; ?>" style="display: none">
       <div class="container">
         <form class="" action="Admin/uploadimage" method="post">
           <div class="form-group" style="display: flex; align-items: center">
