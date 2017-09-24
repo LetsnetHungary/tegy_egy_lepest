@@ -10,7 +10,7 @@
         public function uploadData($array){
           $mykey = md5(microtime().rand());
           foreach ($array as $key => $value) {
-            $stmt = $this->db->prepare("INSERT INTO `projects`(`project_id`, `type`, `content`) VALUES (:id, :type, :content)");
+            $stmt = $this->db->prepare("INSERT INTO projects (project_id, type, content) VALUES (:id, :type, :content)");
             $stmt->execute(array(
               ":id" => $mykey,
               ":type" => $key,
@@ -25,7 +25,7 @@
           foreach ($array as $key => $value) {
             if(!empty($value)){
               echo($key);
-              $stmt = $this->db->prepare("UPDATE `projects` SET `content`= :content WHERE `project_id` = :id AND `type` = :type");
+              $stmt = $this->db->prepare("UPDATE projects SET content= :content WHERE project_id = :id AND type = :type");
               $stmt->execute(array(
                 ":id" => $id,
                 ":type" => $key,
