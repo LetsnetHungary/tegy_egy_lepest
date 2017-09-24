@@ -17,11 +17,6 @@
           ?>
         </ul>
       </nav>
-      <nav aria-label="Page navigation example" class="buttons">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#" onclick="setup(<?php echo $counter; ?>)">Uplad image</a></li>
-        </ul>
-      </nav>
     </div>
 
     <div class="new" style="display: none" id="0">
@@ -128,15 +123,5 @@
         <?php
       }
     ?>
-    <div class="upload_image" id ="<?php echo $counter; ?>" style="display: none">
-      <div class="container">
-        <form class="" action="Admin/uploadimage" method="post">
-          <div class="form-group" style="display: flex; align-items: center">
-            <input type="file" name="file" class="fileupload" enctype="multipart/form-data" id="file">
-            <input type="submit" name="image" class="btn btn-primary" value="Upload" style="margin-left: 10px">
-          </div>
-        </form>
-      </div>
-    </div>
 </main>
 <script type="text/javascript" src ="../../assets/js/admin.js"></script>
