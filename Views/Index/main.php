@@ -1,8 +1,10 @@
-
-<div class ="hatter" style="width: 100vw; padding-top: 143px;">
-   <img src="assets/images/index.jpg" alt="slider1">
+<div class ="hatter" style="width: 100%; padding-top: 103px;">
+   <img src="assets/images/index.jpg">
 </div>
-<main style="background: #c5ccd8;">
+<div class="window">
+
+</div>
+<main style="background: #e3e8ef; padding-bottom: 40px;">
    <div class="jumbotron jumbotron-fluid myJumbotron">
     <div class="container">
       <div class="lead" style="font-size: 45px; margin-left: 0;">"Tégy egy lépést!" Alapítvány!</div>

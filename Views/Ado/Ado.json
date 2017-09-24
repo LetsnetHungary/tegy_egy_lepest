@@ -1,6 +1,7 @@
 {
 	"css" : [
-      "../../assets/font-awesome/css/font-awesome.min.css"
+      "../../assets/font-awesome/css/font-awesome.min.css",
+	   "../../assets/css/ado.css"
   ],
 	"js" : [
   ],

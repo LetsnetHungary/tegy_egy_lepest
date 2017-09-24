@@ -1,7 +1,7 @@
-<main style="background: #c5ccd8;">
+<main style="background: #e3e8ef;">
   <?php $project = $this->contents[0];
   ?>
-<div class="jumbotron jumbotron-fluid" style="background:#68bc62">
+<div class="jumbotron jumbotron-fluid myJumbotron" style="">
    <div class="container">
      <h1 class="display-4"><?php echo $project["title"]; ?></h1>
        <hr class="m-y-md">
@@ -13,3 +13,5 @@
    <p><?php echo $project["editor"]; ?></p> </br>
 
 </div>
+
+</main>

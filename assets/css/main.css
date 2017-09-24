@@ -1,3 +1,10 @@
+body{
+   background: #e3e8ef;
+}
 .card{
    border-color: black;
+}
+
+.myJumbotron {
+   background-color: rgb(181, 218, 0);
 }
