@@ -8,7 +8,7 @@
       <nav aria-label="Page navigation example" class="buttons">
         <ul class="pagination">
           <?php
-            $counter = 2;
+            $counter = 1;
             foreach($this->contents as $value){
               ?>
               <li class="page-item"><a class="page-link" href="#" onclick="setup(<?php echo $counter++; ?>)"><?php echo $value["title"]; ?></a></li>
@@ -19,7 +19,7 @@
       </nav>
       <nav aria-label="Page navigation example" class="buttons">
         <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#" onclick="setup(1)">Uplad image</a></li>
+          <li class="page-item"><a class="page-link" href="#" onclick="setup(<?php echo $counter; ?>)">Uplad image</a></li>
         </ul>
       </nav>
     </div>
@@ -128,5 +128,15 @@
         <?php
       }
     ?>
+    <div class="upload_image" id ="<?php echo $counter; ?>">
+      <div class="container">
+        <form class="" action="Admin/uploadimage" method="post">
+          <div class="form-group" style="display: flex; align-items: center">
+            <input type="file" name="file" class="fileupload" enctype="multipart/form-data" id="file">
+            <input type="submit" name="image" class="btn btn-primary" value="Upload" style="margin-left: 10px">
+          </div>
+        </form>
+      </div>
+    </div>
 </main>
 <script type="text/javascript" src ="../../assets/js/admin.js"></script>

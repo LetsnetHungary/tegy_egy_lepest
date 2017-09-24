@@ -50,4 +50,11 @@
           }
           return $return_array;
         }
+
+        public function uploadImage($files){
+          $uploaddir = '../../assets/images/';
+          $uploadfile = $uploaddir . basename($files['file']['name']);
+
+          return move_uploaded_file($files['file']['tmp_name'], $uploadfile);
+        }
     }

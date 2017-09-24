@@ -41,3 +41,14 @@
       }
       header("Location: /Admin");
     });
+    $router->post("uploadimage", function(){
+      echo $_FILES["file"]["name"];
+      die();
+      if(!$_SESSION["logged"] || empty($_POST)){
+          header("Location: /Login");
+          return;
+      }
+      $model = new Admin_Model();
+      $model->uploadImage($_FILES);
+      header("Location: /Admin");
+    });

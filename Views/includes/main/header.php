@@ -38,9 +38,9 @@
                       Bemutatkozás<span class="sr-only">(current)</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item header-text" href="Index#about">Az alapítványról</a>
-                      <a class="dropdown-item header-text" href="Index#members">A kuratórium tagjai</a>
-                      <a class="dropdown-item header-text" href="Index#docs">Beszámolók</a>
+                      <a class="dropdown-item header-text" href="/Index#about">Az alapítványról</a>
+                      <a class="dropdown-item header-text" href="/Index#members">A kuratórium tagjai</a>
+                      <a class="dropdown-item header-text" href="/Index#docs">Beszámolók</a>
                     </div>
                   </li>
                   <li class="nav-item">
