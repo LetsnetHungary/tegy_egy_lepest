@@ -1,5 +1,5 @@
-<body style="background: #c5ccd8;">
-<div class="jumbotron jumbotron-fluid myJumbotron" style="background-color: #68bc62;">
+<main>
+<div class="jumbotron jumbotron-fluid myJumbotron">
    <div class="container">
       <div class="lead" id="docs" style="font-size: 45px; margin: 0;">
          Adó 1%
@@ -9,10 +9,9 @@
    </div>
 </div>
 <div class="container">
-   <div class="col-12 contact-info">
+   <div class="col-12 contact-info lead">
       <i class="fa fa-location-arrow fa-1x" aria-hidden="true">123456789123456789</i>
    </div>
 
 </div>
-
-</body>
+</main>

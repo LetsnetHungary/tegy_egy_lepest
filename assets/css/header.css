@@ -5,5 +5,14 @@
 
 .header-text{
    font-size: 1.2em!important;
-   border-left: 2px!important;
+   padding: 10px!important;
+   border-left: 2px red solid;
+   border-color: red!important;
+}
+.header-intro{
+
+      font-size: 1.2em!important;
+      padding: 10px!important;
+}
+nav{
 }

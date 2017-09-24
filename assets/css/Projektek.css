@@ -5,3 +5,6 @@
 .projekt-text {
    padding: 5px;
 }
+.nav-link:active{
+   color: red;
+}

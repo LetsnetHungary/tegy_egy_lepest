@@ -1,6 +1,6 @@
-<main style="background: #c5ccd8;">
+<main style="background: #e3e8ef;">
 
-<div class="jumbotron jumbotron-fluid" style="background:#68bc62">
+<div class="jumbotron jumbotron-fluid myJumbotron">
    <div class="container">
      <h1 class="display-4">Projektek</h1>
        <hr class="m-y-md">
