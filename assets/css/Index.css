@@ -19,15 +19,13 @@
 
 @media screen and (min-width: 400px) {
    .hatter{
-      height: 10vh;
+      padding-top: 60px;
    }
-   .imgSpace{
-      height: 200px;
-   }
+
 }
-@media screen and (min-width: 510px){
+@media screen and (max-width: 510px){
    .header-space{
-      height: 5vh;
+      height: 10vh;
    }
 }
 .window{

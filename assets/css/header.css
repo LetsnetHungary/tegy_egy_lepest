@@ -4,15 +4,16 @@
    box-shadow: 0px 7px 25px 0px rgba(102,102,102,1);}
 
 .header-text{
-   font-size: 1.2em!important;
+   font-size: 1.1em!important;
    padding: 10px!important;
-   border-left: 2px red solid;
-   border-color: red!important;
+   border-left: 3px black solid;
 }
 .header-intro{
 
-      font-size: 1.2em!important;
+      font-size: 1.1em!important;
       padding: 10px!important;
 }
-nav{
+
+.li{
+   margin: 10px 0!important;
 }
