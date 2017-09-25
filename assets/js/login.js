@@ -12,23 +12,23 @@ $(document).ready(() => {
             },
             success: function (result) {
 
-                console.log(result)
                 result = JSON.parse(result)
 
-                $("#notification-title").html(result.title)
                 $("#notification-message").html(result.message)
 
                 if(!result.success) {
+                    $("#notification-title").html("Hiba: ")
                     $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-error")
                     setTimeout(() => {
                         $("#notification-top").slideToggle("fast")
                     }, 3500)
                 }
                 else {
-                    $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-success")
+                   $("#notification-title").html("")
+                   $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-success")
                     setTimeout(() => {
                         window.location = "../Admin"
-                    }, 2400)
+                    }, 700)
 
                 }
             },
