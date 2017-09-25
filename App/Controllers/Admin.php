@@ -1,15 +1,11 @@
 <?
-    CoreApp\Session::init();
     require _MODELS . "Admin_Model" . _PHP_ENDING;
+
     $router = new CoreApp\Router();
 
-    $_SESSION["logged"] = true;
-
     $router->get("", function(){
-      if(!$_SESSION["logged"]){
-          header("Location: Login");
-          return;
-      }
+      shouldredirect();
+
       $model = new Admin_Model();
       $view = new CoreApp\View("Admin");
       $view->contents = $model->getData();
@@ -17,20 +13,15 @@
     });
 
     $router->post("upload", function(){
-      if(!$_SESSION["logged"] || empty($_POST)){
-          header("Location: /Login");
-          return;
-      }
+
       $model = new Admin_Model();
       $model->uploadData($_POST);
       header("Location: /Admin");
     });
 
     $router->post("update", function(){
-      if(!$_SESSION["logged"] || empty($_POST)){
-          header("Location: /Login");
-          return;
-      }
+      shouldredirect();
+
       $model = new Admin_Model();
       if(isset($_POST["save"])){
         $model->updateData($_POST);
@@ -40,16 +31,12 @@
       }
       header("Location: /Admin");
     });
-    /*
-    $router->post("uploadimage", function(){
-      print_r($_POST);
-      die();
-      if(!$_SESSION["logged"] || empty($_POST)){
-          header("Location: /Login");
-          return;
-      }
-      $model = new Admin_Model();
-      $model->uploadImage($_FILES);
-      header("Location: /Admin");
-    });
-    */
+
+    function shouldredirect(){
+      CoreApp\Session::init();
+      $auth = new Helpers\Authenticate();
+      if(!isset($_SESSION["logged"]))
+        header("Location: Login");
+      if(!$auth->cULI())
+        header("Location: Login");
+    }

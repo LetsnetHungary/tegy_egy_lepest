@@ -3,7 +3,7 @@
     "../../assets/css/Login.css"
   ],
 	"js" : [
-    "https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"
+    "../../assets/js/login.js"
   ],
   "fonts" : [
 	],

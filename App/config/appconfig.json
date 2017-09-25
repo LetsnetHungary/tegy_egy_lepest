@@ -12,5 +12,13 @@
             "DB_USER" : "****",
             "DB_PASSWORD" : "****"
         }
+    },
+    "authenticate" : {
+      "appid": "73f1ea33-3f46-458a-a390-aa5ce3bc7d50",
+      "loginURL": "http://www.graphed.hu/Auth/login/",
+      "checkIfLoggedInURL": "http://www.graphed.hu/Auth/check/",
+      "logoutURL": "http://www.graphed.hu/Auth/logout/",
+      "checkURL": "http://tegyegylepest:8080/Login/check"
     }
+
 }
