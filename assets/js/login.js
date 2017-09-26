@@ -16,6 +16,8 @@ $(document).ready(() => {
             },
             success: function (result) {
 
+                console.log(result)
+
                 result = JSON.parse(result)
 
                 $("#notification-message").html(result.message)
