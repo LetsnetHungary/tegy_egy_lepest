@@ -3,6 +3,7 @@
     "../../assets/css/Login.css"
   ],
 	"js" : [
+		"../../assets/js/fingerprint.min.js",
     "../../assets/js/login.js"
   ],
   "fonts" : [
