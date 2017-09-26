@@ -47,7 +47,7 @@
       }
 
       public function lO(){
-        return $this->logout($_SESSION["logged"], $_SESSION["logged"]["fingerprint"]);
+        return $this->logout($_SESSION["logged"]["uniquekey"], $_SESSION["logged"]["fingerprint"]);
       }
 
       private function logout($user, $devkey){
