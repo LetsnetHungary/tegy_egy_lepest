@@ -34,6 +34,8 @@
 
     function shouldredirect(){
       $auth = new Helpers\Authenticate();
+      if(!isset($_SESSION["logged"])) 
+        return;
       if($auth->cULI())
         header("Location: Admin");
     }
