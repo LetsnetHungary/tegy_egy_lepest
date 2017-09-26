@@ -11,7 +11,7 @@
           $this->checkurl = \CoreApp\AppConfig::getData("authenticate=>checkIfLoggedInURL").$this->id;
         }
         public function cULI(){
-          return $this->checkLoggedin($_SESSION["logged"], "52e4ceec7c8f3ce37fa7cb898d52b501");
+          return $this->checkLoggedin($_SESSION["logged"]["uniquekey"], $_SESSION["logged"]["fingerprint"]);
         }
 
         private function checkLoggedin($user, $devkey){

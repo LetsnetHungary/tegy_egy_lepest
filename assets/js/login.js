@@ -36,7 +36,7 @@ $(document).ready(() => {
                        $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-success")
                         setTimeout(() => {
                             window.location = "../Admin"
-                        }, 700)
+                        }, 7000)
             
                     }
                 },

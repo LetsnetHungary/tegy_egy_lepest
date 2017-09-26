@@ -4,6 +4,8 @@
 
 
     $router->get("", function(){
+      CoreApp\Session::init();
+      //print_r($_SESSION); die();
       shouldredirect();
 
       if(isset($_COOKIE["keepmeloggedin"])){
@@ -12,9 +14,10 @@
           header("Location: /Admin");
         }
       }
-      
       $view = new CoreApp\View("Login");
       $view->render();
+
+      
     });
 
     $router->post("loginrequest", function(){
@@ -39,3 +42,8 @@
       if($auth->cULI())
         header("Location: Admin");
     }
+
+    $router->get("asdf", function() {
+      CoreApp\Session::init();
+      print_r($_SESSION);
+    });

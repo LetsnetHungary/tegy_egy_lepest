@@ -17,12 +17,12 @@
         return $this->checkLogin($array["email"], $array["password"], $array["fingerprint"], $array["lalo"], $array["keepmeloggedin"]);
       }
 
-      private function checkLogin($email, $pw, $devkey, $lalo, $keepme){
+      private function checkLogin($email, $pw, $fingerprint, $lalo, $keepme){
         $res = json_decode($this->CURLWPOST($this->loginurl, array(
           "email" => $email,
           "uniquekey" => CoreApp\Session::get("logged"),
           "password" => $pw,
-          "fingerprint" => $devkey,
+          "fingerprint" => $fingerprint,
           "keepmeloggedin" => $keepme,
           "lalo" => $lalo
         )), true);
@@ -32,7 +32,8 @@
             "message" => $res["message"]
           );
         }
-        $this->login($res["logged_user"]);
+        $this->login($res["logged_user"], $fingerprint);
+        //die(print_r($_SESSION));
         if(isset($res["cookie_hash"]) && $res["cookie_hash"] != "---"){
           setcookie("keepmeloggedin", $res["cookie_hash"], 2147483547, "/Login");
         }
@@ -41,12 +42,12 @@
           "message" => $res["message"]
         );
       }
-      private function login($uniq){
-        CoreApp\Session::set("logged", $uniq);
+      private function login($uniq, $fingerprint){
+        $_SESSION["logged"] = []; $_SESSION["logged"]["uniquekey"] = $uniq; $_SESSION["logged"]["fingerprint"] = $fingerprint;
       }
 
       public function lO(){
-        return $this->logout($_SESSION["logged"], "52e4ceec7c8f3ce37fa7cb898d52b501");
+        return $this->logout($_SESSION["logged"], $_SESSION["logged"]["fingerprint"]);
       }
 
       private function logout($user, $devkey){
@@ -65,19 +66,18 @@
       }
 
       public function kULI($hash){
-        return $this->keepUserLoggedIn($hash, "52e4ceec7c8f3ce37fa7cb898d52b501", "2345678");
+        return $this->keepUserLoggedIn($hash, "---;---");
       }
-      private function keepUserLoggedIn($hash, $devkey, $lalo){
+      private function keepUserLoggedIn($hash, $lalo){
         $res = json_decode($this->CURLWPOST($this->keepmeloggedinurl, array(
            "hash" => $hash,
-           "lalo" => $lalo,
-           "fingerprint" => $devkey
+           "lalo" => $lalo
          )), true);
 
          if(!is_array($res))
             return false;
           if(!$res["error"]){
-            $this->login($res["logged_user"]);
+            $this->login($res["logged_user"], $res["fingerprint"]);
             return true;
           }
           else if($res["deletecookie"])
