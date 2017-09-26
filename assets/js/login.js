@@ -31,9 +31,8 @@ $(document).ready(() => {
                    $("#notification-title").html("")
                    $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-success")
                     setTimeout(() => {
-                        console.log(result)
                         window.location = "../Admin"
-                    }, 7000)
+                    }, 700)
 
                 }
             },
