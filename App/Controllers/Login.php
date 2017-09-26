@@ -42,8 +42,3 @@
       if($auth->cULI())
         header("Location: Admin");
     }
-
-    $router->get("asdf", function() {
-      CoreApp\Session::init();
-      print_r($_SESSION);
-    });
