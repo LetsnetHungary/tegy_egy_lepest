@@ -1,5 +1,9 @@
 $(document).ready(() => {
+
+    console.log("asdfasd")
+
     $("#loginButton").click(() => {
+
         $.ajax({
             type: 'POST',
             url: 'Login/loginrequest',
@@ -27,8 +31,9 @@ $(document).ready(() => {
                    $("#notification-title").html("")
                    $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-success")
                     setTimeout(() => {
+                        console.log(result)
                         window.location = "../Admin"
-                    }, 700)
+                    }, 7000)
 
                 }
             },
