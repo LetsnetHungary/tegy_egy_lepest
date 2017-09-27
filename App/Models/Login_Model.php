@@ -89,14 +89,14 @@
         return $this->keepUserLoggedIn($hash, $devkey, "---;---");
       }
       private function keepUserLoggedIn($hash, $devkey, $lalo){
-        $res = json_decode($this->CURLWPOST($this->keepmeloggedinurl, array(
+        $res = $this->CURLWPOST($this->keepmeloggedinurl, array(
            "hash" => $hash,
            "fingerprint" => $devkey,
            "lalo" => $lalo
-         )), true);
-         echo $hash;
-         echo $devkey;
+         ));
          print_r($res);
+         $res = json_decode($res, true);
+
          if(!is_array($res))
             return false;
           if(!$res["error"]){
