@@ -17,3 +17,9 @@
 .li{
    margin: 10px 0!important;
 }
+
+@media screen and (max-width: 384px) {
+   nav {
+      padding: 10px 0!important;
+   }
+}
