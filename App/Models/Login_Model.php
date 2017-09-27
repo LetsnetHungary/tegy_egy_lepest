@@ -64,7 +64,7 @@
         unset($_SESSION["logged"]);
         return false;
       }
-      
+
       public function lO(){
         return $this->logout($_SESSION["logged"]["uniquekey"], $_SESSION["logged"]["fingerprint"]);
       }
@@ -94,7 +94,9 @@
            "fingerprint" => $devkey,
            "lalo" => $lalo
          )), true);
-
+         echo $hash;
+         echo $devkey;
+         print_r($res);
          if(!is_array($res))
             return false;
           if(!$res["error"]){
