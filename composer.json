@@ -6,7 +6,9 @@
         "psr-4": {
             "CoreApp\\": "CoreApp/",
             "CoreApp\\Controller\\" : "CoreApp/_controllers/",
-            "CoreApp\\Model\\" : "CoreAll/_models/"
+            "CoreApp\\Model\\" : "CoreAll/_models/",
+            "Helpers\\" : "App/Helpers/"
+
         }
     }
 }

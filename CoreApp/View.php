@@ -8,6 +8,7 @@
             private $files;
             private $SEO;
             public $parameters;
+            public $contents;
 
             public function __construct($vName) {
                 $this->vName = $vName;

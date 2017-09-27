@@ -1,17 +1,39 @@
 {
 	"css" : [
-		"../../assets/css/Error.css"
+		"../../assets/css/bootstrap-grid.css",
+		"../../assets/css/bootstrap-grid.css.map",
+		"../../assets/css/bootstrap-grid.min.css",
+		"../../assets/css/bootstrap-grid.min.css.map",
+		"../../assets/css/bootstrap-reboot.css",
+		"../../assets/css/bootstrap-reboot.css.map",
+		"../../assets/css/bootstrap-reboot.min.css",
+		"../../assets/css/bootstrap-reboot.min.css.map",
+		"../../assets/css/bootstrap.css",
+		"../../assets/css/bootstrap.css.map",
+		"../../assets/css/bootstrap.min.css",
+		"../../assets/css/bootstrap.min.css.map",
+		"../../assets/css/main.css",
+		"../../assets/css/footer.css",
+		"../../assets/css/header.css"
+
   ],
 	"js" : [
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js",
+		"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.js",
+		"../../assets/js/bootstrap.js",
+		"../../assets/js/bootstrap.min.js",
+		"../../assets/js/jquery-3.2.1.js",
+		"../../assets/js/jquery-3.2.1.min.js"
+
   ],
   "fonts" : [
 	],
 	"seo" :
 	{
-		"title" : "Index Page",
+		"title" : "",
 		"charset" : "UTF-8",
 		"meta" : {
-			"description" : "This is the test Index page"
+			"description" : ""
 		},
 		"og" : {
 

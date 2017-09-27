@@ -18,7 +18,7 @@
         private function getController() {
 
             $href = $this->findController($this->uri);
-            
+
             if(!$href){
               return(require(_HTTP_ERROR_CONTROLLER));
             }
@@ -52,7 +52,7 @@
 
           $this->uri = empty($this->uri) ? [""] : $this->uri;
 
-          $c_uri = count($uri);
+          $c_uri = count($this->uri);
 
             foreach ($this->uri as $i => $urival) {
 
@@ -72,6 +72,7 @@
           $return_array = array();
           reset($routes);
           $return_array["function"] = key($routes);
+          $return_array["parameters"] = [];
 
           foreach($routes[$return_array["function"]] as $key => $value){
             if (strpos($value, ":") == 1) {
@@ -93,7 +94,7 @@
           $route = $this->getRouteMatches($routes);
 
           if ($route) {
-            $this->routes[$route["function"]]["callback"]($route['parameters']);
+            $this->routes[$route["function"]]["callback"]($route["parameters"]);
           }
           else {
             require(_HTTP_ERROR_CONTROLLER);

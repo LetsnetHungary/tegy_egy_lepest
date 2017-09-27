@@ -1,0 +1,33 @@
+.kuratorium{
+   padding-bottom: 30px!important;
+}
+
+.hatter {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -3;
+  top: 0!important;
+  padding-top: 74px;
+}
+
+.hatter img {
+  width: 100vw;
+  object-fit: cover;
+  filter: blur(0px);
+}
+
+@media screen and (min-width: 400px) {
+   .hatter{
+      padding-top: 60px;
+   }
+
+}
+@media screen and (max-width: 510px){
+   .header-space{
+      height: 10vh;
+   }
+}
+.window{
+   height: 50vh;
+}

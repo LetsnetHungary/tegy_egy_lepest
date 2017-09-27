@@ -1,0 +1,18 @@
+footer {
+   background: black;
+   padding: 1.5em 0 1em;
+   color: grey;
+   position: fixed;
+   bottom: 0;
+   width: 100vw;
+}
+
+.contact-info{
+   padding: 20px 0!important;
+   font-size: 1.3em;
+}
+@media screen and (max-width: 475px) {
+   .lead{
+      justify-content: flex-end!important;
+   }
+}
