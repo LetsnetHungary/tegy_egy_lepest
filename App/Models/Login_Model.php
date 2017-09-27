@@ -94,7 +94,9 @@
            "fingerprint" => $devkey,
            "lalo" => $lalo
          ));
+         echo $this->keepmeloggedinurl . "</br>";
          print_r($res);
+         echo "dfgh"
          $res = json_decode($res, true);
 
          if(!is_array($res))
