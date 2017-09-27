@@ -9,6 +9,7 @@
       shouldredirect();
 
       if(isset($_COOKIE["keepmeloggedin"]) && isset($_COOKIE["fingerprint"])){
+        die("eddig jó");
         $model = new Login_Model();
         if($model->kULI($_COOKIE["keepmeloggedin"], $_COOKIE["fingerprint"])){
           header("Location: /Admin");
