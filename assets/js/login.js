@@ -1,7 +1,4 @@
 $(document).ready(() => {
-
-    console.log("asdfasd")
-
     $("#loginButton").click(() => {
 
         var options = {excludeAvailableScreenResolution: true, excludeScreenResolution: true}
@@ -17,13 +14,13 @@ $(document).ready(() => {
                     keepmeloggedin: $('#keepmeloggedin_form')[0].checked
                 },
                 success: function (result) {
-            
+
                     console.log(result)
-            
+
                     result = JSON.parse(result)
-            
+
                     $("#notification-message").html(result.message)
-            
+
                     if(!result.success) {
                         $("#notification-title").html("Hiba: ")
                         $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-error")
@@ -36,13 +33,13 @@ $(document).ready(() => {
                        $("#notification-top").slideToggle("fast").css({"display": "flex"}).addClass(" notification-success")
                         setTimeout(() => {
                             window.location = "../Admin"
-                        }, 7000)
-            
+                        }, 1000)
+
                     }
                 },
                 error: function (xhr, status, error) {}})
-                     
+
         })
-        
+
     })
 })
