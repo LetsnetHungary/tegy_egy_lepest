@@ -1,6 +1,6 @@
 <?
     $router = new CoreApp\Router();
-    require _MODELS . "Login_Model" . _PHP_ENDING;
+    include_once(_MODELS . "Login_Model" . _PHP_ENDING);
 
 
     $router->get("", function(){
@@ -8,16 +8,16 @@
       //print_r($_SESSION); die();
       shouldredirect();
 
-      if(isset($_COOKIE["keepmeloggedin"])){
+      if(isset($_COOKIE["keepmeloggedin"]) && isset($_COOKIE["fingerprint"])){
         $model = new Login_Model();
-        if($model->kULI($_COOKIE["keepmeloggedin"])){
+        if($model->kULI($_COOKIE["keepmeloggedin"], $_COOKIE["fingerprint"])){
           header("Location: /Admin");
         }
       }
       $view = new CoreApp\View("Login");
       $view->render();
 
-      
+
     });
 
     $router->post("loginrequest", function(){
@@ -37,7 +37,7 @@
 
     function shouldredirect(){
       $auth = new Helpers\Authenticate();
-      if(!isset($_SESSION["logged"])) 
+      if(!isset($_SESSION["logged"]))
         return;
       if($auth->cULI())
         header("Location: Admin");

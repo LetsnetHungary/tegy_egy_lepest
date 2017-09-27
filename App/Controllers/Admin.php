@@ -1,5 +1,5 @@
 <?
-    require _MODELS . "Admin_Model" . _PHP_ENDING;
+    include_once(_MODELS . "Admin_Model" . _PHP_ENDING);
 
     $router = new CoreApp\Router();
 
