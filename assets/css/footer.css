@@ -1,7 +1,9 @@
 footer {
    background: black;
-   padding: 1em 0 1em;
    color: grey;
+   height: 64px!important;
+   display: flex;
+   align-items: center;
 
 }
 

@@ -6,7 +6,7 @@
 .header-text{
    font-size: 1.1em!important;
    padding: 10px!important;
-   border-left: 3px black solid;
+   border-left: 2px black solid;
 }
 .header-intro{
 
@@ -18,8 +18,12 @@
    margin: 10px 0!important;
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 375px) {
    nav {
-      padding: 10px 0!important;
+      padding: 0!important;
    }
+}
+
+.header-text, .header-intro, li a {
+   padding: 5px 10px !important;
 }

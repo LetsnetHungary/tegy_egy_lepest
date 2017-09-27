@@ -1,8 +1,8 @@
-<header style="opacity: 1; z-index: 2;">
+<header style="opacity: 1; z-index: 2; height: 103px;">
 <div class="hero">
    <div class="container">
       <div class="row">
-         <nav class="d-flex justify-content-center-md navbar fixed-top navbar-expand-md navbar-light" style="background-color: white; padding: 0 40px;">
+         <nav class="header d-flex justify-content-center-md navbar fixed-top navbar-expand-md navbar-light" style="background-color: white; padding: 0 40px;">
                <a href="/" class="navbar-brand text-primary" id="logo">
                   <img src="/assets/images/Tegyegylepest_logo.jpg" style="" width="230" height="93" class="d-inline-block align-top" alt="">
                </a>

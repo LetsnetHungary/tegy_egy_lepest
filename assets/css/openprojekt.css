@@ -1,17 +1,6 @@
-main{
-   margin-bottom: 56px;
-}
+
 .contact-info{
    padding: 20px 0!important;
-}
-
-footer {
-   background: black;
-   padding: 1.5em 0 1em;
-   color: grey;
-   position: fixed;
-   bottom: 0;
-   width: 100vw;
 }
 
 .lead{
