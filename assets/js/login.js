@@ -1,7 +1,4 @@
 $(document).ready(() => {
-
-    console.log("asdfasd")
-
     $("#loginButton").click(() => {
 
         var options = {excludeAvailableScreenResolution: true, excludeScreenResolution: true}
