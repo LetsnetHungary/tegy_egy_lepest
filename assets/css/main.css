@@ -11,3 +11,6 @@ body{
 main{
    min-height: calc(100vh - 167px)!important;
 }
+.form-control:focus{
+  border-color: rgb(170, 200, 0);
+}

@@ -41,3 +41,30 @@ label{
 .submit_holder input{
   margin: 10px;
 }
+.btn-primary{
+  background-color: rgb(181, 218, 0);
+      border-color: rgb(161, 208, 0);
+}
+.btn-primary:hover{
+  background-color: rgb(171, 208, 0);
+  border-color: rgb(160, 190, 0)
+}
+.btn-primary:active{
+  background-color: rgb(171, 208, 0);
+  border-color: rgb(160, 190, 0)
+}
+.btn-primary:focus{
+  background-color: rgb(171, 208, 0);
+  border-color: rgb(160, 190, 0);
+  box-shadow: 0 0 0 3px rgba(160, 190, 0,.5)
+}
+.page-item.active .page-link{
+    background-color: rgb(181, 218, 0);
+    border-color: rgb(161, 208, 0);
+}
+.page-link{
+  color:  rgb(171, 208, 0);
+}
+.page-link:hover{
+  color: rgb(160, 190, 0);
+}

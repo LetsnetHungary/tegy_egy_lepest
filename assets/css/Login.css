@@ -128,3 +128,20 @@ h1, #loginbutton {
     background-color: #1a8e1a!important;
     color: white;
 }
+.btn-primary{
+  background-color: rgb(181, 218, 0);
+      border-color: rgb(161, 208, 0);
+}
+.btn-primary:hover{
+  background-color: rgb(171, 208, 0);
+  border-color: rgb(160, 190, 0)
+}
+.btn-primary:active{
+  background-color: rgb(171, 208, 0);
+  border-color: rgb(160, 190, 0)
+}
+.btn-primary:focus{
+  background-color: rgb(171, 208, 0);
+  border-color: rgb(160, 190, 0);
+  box-shadow: 0 0 0 3px rgba(160, 190, 0,.5)
+}
