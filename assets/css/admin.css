@@ -1,6 +1,41 @@
 body{
   background: white;
 }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 .fileupload{
   border: rgba(0,0,0,.2) solid 1px;
 }
@@ -67,4 +102,57 @@ label{
 }
 .page-link:hover{
   color: rgb(160, 190, 0);
+}
+.image{
+  padding: 0 0 50px 0;
+}
+.image_holder{
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  border: 1px solid rgb(200,200,200);
+  margin: 10px;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.image_holder:hover > form{
+  opacity: 1;
+}
+.image_holder > img{
+  max-height: 100%;
+  max-width: 100%;
+  z-index: 2;
+}
+.delete{
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  transition: opacity ease-in-out .2s;
+}
+
+.background{
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: 150% 150%!important;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+button{
+  outline: 0;
 }

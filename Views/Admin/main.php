@@ -17,6 +17,11 @@
           ?>
         </ul>
       </nav>
+      <nav aria-label="Page navigation example" class="buttons">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#" onclick="setup(<?php echo $counter++; ?>)">Upload Image</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div class="new" style="display: none" id="0">
@@ -123,5 +128,48 @@
         <?php
       }
     ?>
+
+
+
+
+
+    <div class="image" style="display: none" id="<?php echo $counter++; ?>">
+
+      <div class="images" style="display: flex; justify-content: center; align-items: center; padding: 10px; flex-wrap: wrap;">
+        <?php
+          foreach(scandir("images/") as $value){
+            if(substr($value, -3) == "jpg" || substr($value, -3) == "png" ||substr($value, -3) == "gif" ||substr($value, -3) == "png"){
+            ?>
+            <div style="display: flex;align-items: center;flex-direction: column; height: 300px;">
+              <div class="image_holder">
+                <div class="background"  style="background: url(images/<?php echo $value; ?>)">
+                </div>
+                <img src="images/<?php echo $value; ?>" alt="" class="img">
+                <form action="Admin/deleteimage/<?php echo $value; ?>" method="post" style="position: absolute; z-index: 5;" class="delete">
+                  <button type="submit" style="background-color: rgba(0,0,0,0); border-color: rgba(0,0,0,0)"><i class="material-icons" style="font-size: 60px; cursor: pointer; color: red; width: 60px; height: 60px">close</i></button>
+                </form>
+              </div>
+              <p style=" word-wrap: break-word; max-width: 220px;">images/<?php echo $value; ?></p>
+            </div>
+            <?php
+          }}
+        ?>
+      </div>
+      <div class="container">
+        <form method="post" enctype="multipart/form-data" style="display: flex; align-items: center" action="Admin/saveimage">
+            <div class="custom-file">
+              <input type="file" id="img" name="image" class="custom-file-input" style="width: 500px;">
+              <span class="custom-file-control form-control-file"></span>
+            </div>
+          <input type="submit" value="Upload image" name="submit" class="btn btn-primary" style="margin-left: 5px">
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+        $("#img").on('change',function(){
+          var fileName = $(this).val();
+           $(this).next('.form-control-file').addClass("selected").html(fileName);
+        })
+    </script>
 </main>
 <script type="text/javascript" src ="../../assets/js/admin.js"></script>
