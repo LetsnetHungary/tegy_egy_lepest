@@ -2,9 +2,11 @@ body{
    background: #e3e8ef;
 }
 .card{
-   border-color: black;
+   border-color: rgba(0,0,0,.6);
 }
-
+.list-group-item{
+  background: rgba(0,0,0,0);
+}
 .myJumbotron {
    background-color: rgb(181, 218, 0);
 }
@@ -13,4 +15,13 @@ main{
 }
 .form-control:focus{
   border-color: rgb(170, 200, 0);
+}
+.project-header{
+  text-decoration: none!important;
+}
+.project-header > h4{
+  transition: all ease-in-out .15s;
+}
+.project-header > h4:hover{
+  color: #009900!important;
 }

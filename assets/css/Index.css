@@ -3,10 +3,19 @@
 }
 .kuratorium .card{
     height: 160px;
+    margin: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
 }
+
 
 .card-block{
     height: 70%;
+}
+.card-block h3{
+  padding: 5px;
+}
+.card-title{
+    font-size: 23px;
 }
 .hatter {
   position: fixed;

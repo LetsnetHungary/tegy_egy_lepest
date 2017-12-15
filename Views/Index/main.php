@@ -171,7 +171,7 @@
                        <div class="projekt">
                           <div class="card" style="background: #c5ccd8;">
                             <div class="card-block">
-                              <a href="Projektek/<?php echo $key; ?>"> <h4 class="card-header" style="color: #68bc62;"><? echo $project["title"]; ?></h4></a>
+                              <a href="Projektek/<?php echo $key; ?>" class=" project-header"> <h4 class="card-header" style="color: #68bc62;"><? echo $project["title"]; ?></h4></a>
                               <p class="card-text projekt-text"><?php echo $project["subtitle"]; ?></p>
                             </div>
                           </div>
@@ -185,7 +185,7 @@
                        <div class="projekt">
                           <div class="card" style="background: #c5ccd8;">
                             <div class="card-block">
-                              <a href="Projektek/<?php echo $key; ?>"><h4 class="card-header" style="color: #68bc62;"><? echo $project["title"]; ?></h4></a>
+                              <a href="Projektek/<?php echo $key; ?>" class=" project-header"><h4 class="card-header" style="color: #68bc62;"><? echo $project["title"]; ?></h4></a>
                               <p class="card-text projekt-text"><?php echo $project["subtitle"]; ?></p>
                             </div>
                           </div>
