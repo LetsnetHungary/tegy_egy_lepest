@@ -4,7 +4,7 @@
    <div class="container">
      <h1 class="display-4">Projektek</h1>
        <hr class="m-y-md">
-     <p class="lead">Alább láthatók a folyamatban lévő illetve lezárult projektek</p>
+     <p class="lead projekt-lead">Alább láthatók a folyamatban lévő illetve lezárult projektek</p>
    </div>
 </div>
 

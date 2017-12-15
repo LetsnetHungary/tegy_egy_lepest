@@ -1,7 +1,13 @@
 .kuratorium{
    padding-bottom: 30px!important;
 }
+.kuratorium .card{
+    height: 160px;
+}
 
+.card-block{
+    height: 70%;
+}
 .hatter {
   position: fixed;
   height: 100vh;
@@ -9,6 +15,9 @@
   z-index: -3;
   top: 0!important;
   padding-top: 74px;
+  background-image: url('/assets/images/kezmuves3.jpg');
+  background-size: contain;
+  background-position: 0 103px;
 }
 
 .hatter img {
@@ -31,4 +40,52 @@
 }
 .window{
    height: 50vh;
+}
+@media screen and (max-width: 840px){
+   .window{
+       height: 45vw;
+   }
+}
+.bemut li{
+    margin: 10px 15px!important;
+}
+
+.nyitokep{
+    object-fit: cover;
+    background-position: center;
+}
+
+/* PROJEKTEK */
+.projekt {
+   padding: 20px!important;
+}
+
+.projekt-text {
+   padding: 5px;
+}
+.contact-info{
+   padding: 20px 0!important;
+}
+
+
+.projekt-lead{
+   margin: 0 2em 0;
+
+   max-width: 280px;
+}
+
+@media screen and (max-width: 475px) {
+   .projekt-lead{
+      justify-content: flex-end!important;
+   }
+}
+.nav-pills .nav-link.active{
+   background-color: black;
+   color: white!important;
+}
+.nav-link{
+   color: black;
+}
+.nav-link:hover{
+   color: black;
 }

@@ -1,4 +1,5 @@
 <header style="opacity: 1; z-index: 2; height: 103px;">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div class="hero">
    <div class="container">
       <div class="row">
@@ -23,14 +24,14 @@
                     </div>
                   </li>
                   <li class="nav-item header-text">
-                     <a href="/Projektek" class="nav-link">Támogatott projektek</a>
+                     <a href="#projektek" class="nav-link">Támogatott projektek</a>
                   </li>
-                  <li class="nav-item header-text">
+                  <!-- <li class="nav-item header-text">
                      <a href="/Kontakt" class="nav-link">Elérhetőség</a>
-                  </li>
-                  <li class="nav-item header-text">
+                  </li> -->
+                  <!-- <li class="nav-item header-text">
                      <a href="/Ado" class="nav-link">Adó 1%</a>
-                  </li>
+                  </li> -->
                </ul>
             </div>
          </nav>
