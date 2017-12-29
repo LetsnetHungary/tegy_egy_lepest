@@ -138,7 +138,7 @@
       <div class="images" style="display: flex; justify-content: center; align-items: center; padding: 10px; flex-wrap: wrap;">
         <?php
           foreach(scandir("images/") as $value){
-            if(substr($value, -3) == "jpg" || substr($value, -3) == "png" ||substr($value, -3) == "gif" ||substr($value, -3) == "png"){
+            if(substr($value, -3) == "jpg" || substr($value, -3) == "png"|| substr($value, -3) == "JPG" ||substr($value, -3) == "gif" ||substr($value, -3) == "png"){
             ?>
             <div style="display: flex;align-items: center;flex-direction: column; height: 300px;">
               <div class="image_holder">

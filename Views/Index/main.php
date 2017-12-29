@@ -150,23 +150,26 @@
            <div class="container">
               <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
               <a class="nav-link active" href="#two" data-toggle="tab">Lezárult projektek</a>
-                 <a class="nav-link" href="#one" data-toggle="tab">Futó projektek</a>
+                 <?php
+                 $lezarult = array();
+                 $futo = array();
+                 foreach ($this->contents as $key => $value) {
+                   if($value["project"] == "lezarult"){
+                     $lezarult[$key] = $value;
+                   }
+                   else{
+                     $futo[$key] = $value;
+                   }
+                 }
+                 if(!empty($futo)){
+                 ?><a class="nav-link" href="#one" data-toggle="tab">Futó projektek</a><?php } ?>
               </nav>
               <div class="tab-content py-5">
                  <div class="tab-pane" id="one">
                     <h3 class="display-4">Futó projektek</h3>
                     <hr class="my-4">
                     <?
-                    $lezarult = array();
-                    $futo = array();
-                    foreach ($this->contents as $key => $value) {
-                      if($value["project"] == "lezarult"){
-                        $lezarult[$key] = $value;
-                      }
-                      else{
-                        $futo[$key] = $value;
-                      }
-                    }
+
                     foreach($futo as $key => $project) { ?>
                        <div class="projekt">
                           <div class="card" style="background: #c5ccd8;">
