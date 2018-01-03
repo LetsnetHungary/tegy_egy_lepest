@@ -18,11 +18,11 @@
 
             private function files() {
               $fhead_local = "Views/$this->vName/head.php";
-              $fheader_local = "Views/$this->vName/header.php";
+              // $fheader_local = "Views/$this->vName/header.php";
               $ffooter_local = "Views/$this->vName/footer.php";
 
               $this->files["head"] = file_exists($fhead_local) ? $fhead_local : "Views/includes/main/head.php";
-              $this->files["header"] = file_exists($fheader_local) ? $fheader_local : "Views/includes/main/header.php";
+              // $this->files["header"] = file_exists($fheader_local) ? $fheader_local : "Views/includes/main/header.php";
               $this->files["view"] = "Views/$this->vName/main.php";
               $this->files["footer"] = file_exists($ffooter_local) ? $ffooter_local : "Views/includes/main/footer.php";
             }
