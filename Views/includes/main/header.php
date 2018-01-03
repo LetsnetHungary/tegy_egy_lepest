@@ -18,17 +18,17 @@
                       Bemutatkozás<span class="sr-only">(current)</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item header-text" href="/Index#about">Az alapítványról</a>
-                      <a class="dropdown-item header-text" href="/Index#members">A kuratórium tagjai</a>
-                      <a class="dropdown-item header-text" href="/Index#docs">Beszámolók</a>
+                      <a style="font-size: 1em;" class="dropdown-item" href="/Index#about">Az alapítványról</a>
+                      <a  style="font-size: 1em;" class="dropdown-item" href="/Index#members">A kuratórium tagjai</a>
+                      <!-- <a class="dropdown-item header-text" href="/Index#docs">Beszámolók</a> -->
                     </div>
                   </li>
                   <li class="nav-item header-text">
-                     <a href="#projektek" class="nav-link">Támogatott projektek</a>
+                     <a href="/Projektek" class="nav-link">Projektek</a>
                   </li>
-                  <!-- <li class="nav-item header-text">
+                  <li class="nav-item header-text">
                      <a href="/Kontakt" class="nav-link">Elérhetőség</a>
-                  </li> -->
+                  </li>
                   <!-- <li class="nav-item header-text">
                      <a href="/Ado" class="nav-link">Adó 1%</a>
                   </li> -->

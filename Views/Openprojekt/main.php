@@ -14,4 +14,20 @@
 
 </div>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="picModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="picModalContent"></div>
+  </div>
+</div>
 </main>
+<script type="text/javascript">
+$('img').click(function(){
+    var imgSrc = $(this).attr('src')
+    console.log(imgSrc)
+
+$('#picModalContent').replaceWith('<div class="modal-content" id="picModalContent"><img alt="" src="'+ imgSrc + '"/></div>') 
+})
+</script>

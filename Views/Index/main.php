@@ -65,8 +65,16 @@
             <hr class="my-3">
          </div>
 
+         <div class="container">
+             <p>Forgács Gábor Balázs, elnök</p>
+             <p>Altbäcker Zsuzsanna</p>
+             <p>Gergely Judit</p>
+             <p>Kőpatakiné Mészáros Mária</p>
+             <p>Zakál Andrea</p>
+         </div>
 
-         <!-- kuratorium tagjai start -->
+
+         <!-- kuratorium tagjai start
          <div class="container">
             <div class="row justify-content-center kuratorium">
                <div class="col-md-6 col-lg-2 col-lg-offset-2">
@@ -120,6 +128,7 @@
                   </div>
                </div>
             </div>
+            -->
 <!--
                <div class="lead" id="docs" style="font-size: 45px; margin: 0;">
                   Beszámolók
@@ -139,67 +148,19 @@
 
 
 </div>
-           <div class="jumbotron-fluid myJumbotron" style="padding: 30px 0; margin-bottom: 20px;" id="projektek">
-              <div class="container">
-                <h1 class="display-4">Projektek</h1>
-                  <hr class="m-y-md">
-                <p class="lead">Alább láthatók a folyamatban lévő illetve lezárult projektek</p>
-              </div>
-           </div>
 
-           <div class="container">
-              <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
-              <a class="nav-link active" href="#two" data-toggle="tab">Lezárult projektek</a>
-                 <?php
-                 $lezarult = array();
-                 $futo = array();
-                 foreach ($this->contents as $key => $value) {
-                   if($value["project"] == "lezarult"){
-                     $lezarult[$key] = $value;
-                   }
-                   else{
-                     $futo[$key] = $value;
-                   }
-                 }
-                 if(!empty($futo)){
-                 ?><a class="nav-link" href="#one" data-toggle="tab">Futó projektek</a><?php } ?>
-              </nav>
-              <div class="tab-content py-5">
-                 <div class="tab-pane" id="one">
-                    <h3 class="display-4">Futó projektek</h3>
-                    <hr class="my-4">
-                    <?
-
-                    foreach($futo as $key => $project) { ?>
-                       <div class="projekt">
-                          <div class="card" style="background: #c5ccd8;">
-                            <div class="card-block">
-                              <a href="Projektek/<?php echo $key; ?>" class=" project-header"> <h4 class="card-header" style="color: #68bc62;"><? echo $project["title"]; ?></h4></a>
-                              <p class="card-text projekt-text"><?php echo $project["subtitle"]; ?></p>
-                            </div>
-                          </div>
-                       </div>
-                    <? } ?>
-                 </div>
-                 <div class="tab-pane active" id="two">
-                    <h3 class="display-4">Lezárult projektek</h3>
-                    <hr class="my-4">
-                    <? foreach($lezarult as $key => $project) { ?>
-                       <div class="projekt">
-                          <div class="card" style="background: #c5ccd8;">
-                            <div class="card-block">
-                              <a href="Projektek/<?php echo $key; ?>" class=" project-header"><h4 class="card-header" style="color: #68bc62;"><? echo $project["title"]; ?></h4></a>
-                              <p class="card-text projekt-text"><?php echo $project["subtitle"]; ?></p>
-                            </div>
-                          </div>
-                       </div>
-                    <? } ?>
-                 </div>
-              </div>
-           </div>
 </body>
 </main>
 
+<style media="screen">
+    .fa-arrow-right{
+        color: #62656b;
+        right: 0;
+    }
+    .fa-arrow-right:hover{
+        color: #009900!important;
+    }
+</style>
 <script type="text/javascript">
     // function scrollNav() {
     // $('.nav a').click(function(){
