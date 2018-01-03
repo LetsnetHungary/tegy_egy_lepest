@@ -8,7 +8,18 @@
 
    max-width: 80vw;
 }
-
+.modal{
+  justify-content: center;
+  align-items: center
+}
+.modal-dialog{
+  margin: 0!important
+}
+p > img{
+  max-height: 150px;
+  margin: 7px;
+  width: auto!important;
+}
 @media screen and (max-width: 475px) {
    .lead{
       justify-content: flex-end!important;

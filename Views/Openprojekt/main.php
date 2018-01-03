@@ -18,7 +18,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="picModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog" role="document" style="max-width: 80vw">
     <div class="modal-content" id="picModalContent"></div>
   </div>
 </div>
@@ -28,6 +28,6 @@ $('img').click(function(){
     var imgSrc = $(this).attr('src')
     console.log(imgSrc)
 
-$('#picModalContent').replaceWith('<div class="modal-content" id="picModalContent"><img alt="" src="'+ imgSrc + '"/></div>') 
+$('#picModalContent').replaceWith('<div class="modal-content" id="picModalContent"><img alt="" src="'+ imgSrc + '" style="max-width: 90vw; max-height: 90vh"/></div>')
 })
 </script>
