@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                <ul class="navbar-nav">
                   <li class="nav-item active dropdown header-intro">
-                    <a class="nav-link" href="Index">
+                    <a class="nav-link" href="/Index">
                       Bemutatkozás<span class="sr-only">(current)</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
