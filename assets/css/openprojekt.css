@@ -17,8 +17,14 @@
 }
 p > img{
   max-height: 150px;
-  margin: 7px;
+  margin: 7px!important;
   width: auto!important;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all ease-in-out .15s;
+}
+p > img:hover{
+  border-radius: 18px;
 }
 @media screen and (max-width: 475px) {
    .lead{
